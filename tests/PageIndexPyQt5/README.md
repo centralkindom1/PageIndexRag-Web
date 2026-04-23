@@ -23,11 +23,13 @@ This is a PyQt5-based desktop implementation of the PageIndex RAG system. It pro
    pip install -r requirements.txt
    ```
 
-2. (Optional) Create a `.env` file in this directory with your API key:
-   ```env
-   CHATGPT_API_KEY=your_api_key_here
-   API_BASE_URL=https://api.deepseek.com
+2. **Configure API Key**:
+   Open `core/utils.py` and modify the following lines with your own API configuration:
+   ```python
+   CHATGPT_API_KEY = "your-api-key-here"
+   API_BASE_URL = "https://api.deepseek.com"
    ```
+   Alternatively, you can set these within the application's UI under `File -> Settings`.
 
 ## How to Run
 

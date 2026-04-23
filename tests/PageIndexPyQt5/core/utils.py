@@ -10,15 +10,14 @@ import copy
 import asyncio
 import pymupdf
 from io import BytesIO
-from dotenv import load_dotenv
-load_dotenv()
 import logging
 import yaml
 from pathlib import Path
 from types import SimpleNamespace as config
 
-CHATGPT_API_KEY = os.getenv("CHATGPT_API_KEY")
-API_BASE_URL = os.getenv("API_BASE_URL", None)
+# Hardcoded API Configuration
+CHATGPT_API_KEY = "your-api-key-here"
+API_BASE_URL = "https://api.deepseek.com"
 
 def count_tokens(text, model=None):
     if not text:

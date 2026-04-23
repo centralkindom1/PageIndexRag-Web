@@ -42,8 +42,8 @@ class MainWindow(QMainWindow):
             with open(self.config_path, "r") as f:
                 return json.load(f)
         return {
-            "api_key": os.getenv("CHATGPT_API_KEY", ""),
-            "base_url": os.getenv("API_BASE_URL", ""),
+            "api_key": "your-api-key-here",
+            "base_url": "https://api.deepseek.com",
             "model": "deepseek-chat"
         }
 

@@ -2,13 +2,9 @@ import sys
 import os
 from PyQt5.QtWidgets import QApplication
 from ui.MainWindow import MainWindow
-from dotenv import load_dotenv
 from pathlib import Path
 
 def main():
-    # Load .env if exists
-    load_dotenv()
-
     app = QApplication(sys.argv)
     app.setApplicationName("PageIndex PyQt5")
 
